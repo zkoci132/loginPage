@@ -6,6 +6,21 @@ body{
     margin: 0;
 }
 
+p,.row1,.row2,.row3,.submitButton{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 20px;
+}
+
+
+
+@font-face {
+    font-family: skyrim;
+    src: url(Balgruf-JRye7.ttf);
+}
+
 .pageContainer{
     --image-width: 30vw; 
     --signUp-width: 50vw;
@@ -22,6 +37,7 @@ body{
     flex-direction: column;
     height: var(--overallHeight);
     width: var(--signUp-width);
+    border-left: 2px solid black;
 }
 
 
@@ -35,13 +51,25 @@ body{
 
 .logo{
     position: absolute;
-    background-color: black;
+    background-color: rgba(0,0,0, 0.5);
     height: 10vh;
     width: 100%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.logoText{
+    text-align: center;
+    font-family: skyrim;
+    color: white;
+    font-size: 30px;
+    opacity: 100%;
 }
 
 .header,.footer{
@@ -51,7 +79,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: #f5f5f5
+    ;
 }
 
 .footer{
@@ -80,6 +109,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 20px 20px;
+    
+    
     
 }
 
@@ -87,8 +120,18 @@ body{
     gap: 160px;
     display: flex;
     padding: 5px;
+    font-size: 14px;
 }
 
 .firstName label,.lastName label,.email label,.phone label,.password label,.confirmPassword label{
     display: block;
+}
+
+.submitButton{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #555555;
+    color: white;
 }
