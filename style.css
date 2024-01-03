@@ -1,0 +1,74 @@
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.pageContainer{
+    --image-width: 30vw; 
+    --signUp-width: 50vw;
+    --overallHeight: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--overallHeight);
+    width: 100vw;
+}
+
+.signUp{
+    display: flex;
+    flex-direction: column;
+    height: var(--overallHeight);
+    width: var(--signUp-width);
+}
+
+
+
+.image{
+    position: relative;
+    display: flex;
+    height: var(--overallHeight);
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 50%;
+}
+
+.header,.footer{
+    height: 35vh;
+    width: var(--signUp-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.header{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blackBar{
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+}
+
+
+
+.form{
+    height: 30vh;
+    width: var(--signUp-width);
+    background-color: white;
+}
