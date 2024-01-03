@@ -25,6 +25,7 @@ input:focus {
 
 
 
+
 @font-face {
     font-family: skyrim;
     src: url(Balgruf-JRye7.ttf);
@@ -143,4 +144,15 @@ input:focus {
     padding: 10px;
     background-color: #555555;
     color: white;
+}
+
+.passwords{
+    display: flex;
+    gap: 160px;
+}
+
+.passwordWrong{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
 }

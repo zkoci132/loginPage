@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="verify.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
             </div>
             <div class="form">
                 <h2>Please enter your information...</h2>
-                <form action="/formHandler" method="post" id="form1">
+                <form action="/formHandler" method="post" id="form1" onsubmit="return verifyPassword()">
                     <div class="row1">
                         <div class="firstName">
                             <label for="firstName">First Name:</label>
@@ -61,16 +62,21 @@
                     </div>
 
                     <div class="row3">
+                        <div class="passwords">
+                            <div class="password">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="user_password" required/>
 
-                        <div class="password">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="user_password" required/>
+                                <div class="passwordWrong"></div>
+                            </div>
+                            
+    
+                            <div class="confirmPassword">
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="user_confirm" required/>
+                            </div>
                         </div>
-
-                        <div class="confirmPassword">
-                            <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword" name="user_confirm" required/>
-                        </div>
+                        
 
                     </div>
                 
