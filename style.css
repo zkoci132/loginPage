@@ -16,6 +16,15 @@ h2{
 
 
 
+input:focus {
+	border: 2px solid cornflowerblue;
+    outline: none;
+}
+
+
+
+
+
 @font-face {
     font-family: skyrim;
     src: url(Balgruf-JRye7.ttf);

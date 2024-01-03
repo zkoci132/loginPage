@@ -24,7 +24,7 @@
         <div class="signUp">
              <div class="header">
                 <p>
-                   This website is intended as a learning exercise. The form does not actually log you in anywhere. <br> I hope that This
+                   This website is intended as a learning exercise. The form does not actually log you in anywhere. <br> I hope that this
                     does not cause any inconvenience for the users of the site. Thank you.
                 </p>
             </div>
@@ -34,12 +34,12 @@
                     <div class="row1">
                         <div class="firstName">
                             <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="first_name"/>
+                            <input type="text" id="firstName" name="first_name" required/>
                         </div>
 
                         <div class="lastName">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="last_name"/>
+                            <input type="text" id="lastName" name="last_name" required/>
                         </div>
                         
                     </div>
@@ -48,12 +48,13 @@
 
                         <div class="email">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="user_email"/>
+                            <input type="email" id="email" name="user_email" required/>
                         </div>
                         
                         <div class="phone">
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="user_phone"/>
+                            <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" oninvalid="this.setCustomValidity('Please use the following format ###-###-####')"
+                            oninput="this.setCustomValidity('')" required/>
                         </div>
 
                         
@@ -63,12 +64,12 @@
 
                         <div class="password">
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="user_password"/>
+                            <input type="password" id="password" name="user_password" required/>
                         </div>
 
                         <div class="confirmPassword">
                             <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword" name="user_confirm"/>
+                            <input type="password" id="confirmPassword" name="user_confirm" required/>
                         </div>
 
                     </div>
@@ -78,6 +79,9 @@
             </div>
             <div class="footer">
                 <button type="submit" class="submitButton" form="form1">Create Account</button>
+                <div class="loginSection">
+                    <p>Or log in <a href="/loginPage">here</a></p>
+                </div>
             </div>
            
         </div>
